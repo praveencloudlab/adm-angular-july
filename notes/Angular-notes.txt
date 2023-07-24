@@ -1,0 +1,33 @@
+Angular
+----------
+Typescript
+========================
+Components
+Data Bindings
+Component Communications
+Pipes
+Forms
+Api development
+=======================
+ngrx
+testing
+
+
+
+
+Software
+==============
+1.Node (https://nodejs.org/en)
+2.ng ( npm install -g @angular/cli ) - https://angular.io/guide/setup-local
+3.mysql / mongo database
+4.chrome browser
+5. VS Code Editor ( https://code.visualstudio.com/ )
+
+
+https://dev.mysql.com/downloads/file/?id=520510 - mysql
+https://www.mongodb.com/cloud/atlas/register ( mongo db)
+
+
+
+
+
