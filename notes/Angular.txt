@@ -1,0 +1,89 @@
+Angular
+----------
+Typescript
+========================
+Components
+Data Bindings
+Component Communications
+Pipes
+Forms
+Api development
+=======================
+ngrx
+testing
+
+
+
+
+Software
+==============
+1.Node (https://nodejs.org/en)
+2.ng ( npm install -g @angular/cli ) - https://angular.io/guide/setup-local
+3.mysql / mongo database
+4.chrome browser
+5. VS Code Editor ( https://code.visualstudio.com/ )
+
+
+https://dev.mysql.com/downloads/file/?id=520510 - mysql
+https://www.mongodb.com/cloud/atlas/register ( mongo db)
+
+
+=====================
+
+Angular cli commands
+
+ng new my-app => craetes a new app with name my-app
+ng new my-app --skip-install  => skips installing/downloading all modules
+ng new my-app --skip-tests => Do not generate "spec.ts" test files for the new project. 
+
+--------------------------
+
+component generations
+
+ng generate component greet => generates GreetComponet with html template, css and testing
+
+ng g c greet --skip-tests => Do not generate "spec.ts" test files for the greet
+ng g c greet --inline-template  => skips generating html template file for greet
+ng g c greet --inline-style=true => skips generating external css file for greet
+
+ng g c greet --skip-tests --inline-template --inline-style=true => generates only greet.ts 
+
+
+
+Angular Data binding
+=========================
+
+Data binding in Angular refers to the communication between TypeScript code (of components) and templates (html). Angular provides several types of data binding:
+
+Interpolation ({{ value }}): Uses handlebars ({{ }}) to bind data from the TypeScript code to the template. This is a one-way binding from the code to the view.
+
+Property Binding ([value]): You can bind DOM properties (like value, disabled, etc.) of HTML elements to TypeScript code using square brackets ([]). This is also a one-way binding from the code to the view.
+
+Event Binding ((event)): Allows your app to respond to user input in the target environment by binding DOM events (like click, mousemove, keyup, etc.) to TypeScript code. When the user interacts with a bound element, Angular invokes the associated method. This is a one-way binding from the view to the code.
+
+Two-Way Binding ([(ngModel)] or [(value)]): This is a combination of Property and Event Binding. Changes in the application state have been immediately reflected into the view and vice-versa. If the user changes the input value in the view, it updates the corresponding component variable in the TypeScript code.
+
+
+
+Interpolation: {{ 100+200 }} 
+Property Binding: <input [disabled]="isDisabled" />
+Event Binding: <button (click)="submitForm()"></button>
+Two-Way Binding: <input [(ngModel)]="name">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
