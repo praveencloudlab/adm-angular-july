@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Directives</h1> <hr/>
+  <div>
+    This is div content
+  </div>
+  <hr/>
+  <ul>
+    <li [ngClass]="{'text-success': num % 2 === 0, 'text-danger': num % 2 !== 0}" *ngFor="let num of numbers">{{ num }}</li>
+  </ul>
+
+
+
+  <hr/>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of products">
+          <td>{{prod.id}}</td>
+          <td>{{prod.name}}</td>
+          <td>{{prod.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr/>
+  <div [ngClass]="{active:isActive,disabled:isDisabled}">
+    <h3>Hello World</h3>
+  </div>
+    <button (click)="toggleClasses()">Toggle Classes</button>
+
+</div>

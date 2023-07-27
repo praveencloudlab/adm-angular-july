@@ -3,6 +3,13 @@
    Married  <input  #e (click)="test(e)" checked type="checkbox"><br/>
     <div [hidden]="married">
       <input #e1 (keyup)="f1(e1)"  type="text" placeholder="Number of Children"/>
-     
+     <br/>
+     <br/>
+     <input (keyup)="readText(d1)" #d1 placeholder="Message Goes here"/>
+     <h2>{{msg}}</h2>
+     <hr/>
+
+     <input  [(ngModel)]="newMsg"  placeholder="Text Message Goes here" type="text"/>
+      <h2>{{newMsg}}</h2>
     </div>
 </div>

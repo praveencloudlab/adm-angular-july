@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">Greet Component</div>
+    <div class="card-body">
+      <h3>Greet Component</h3>
+      <hr/>
+      <div *ngIf="parentMsg">
+        <h3>{{parentMsg}}</h3>
+        <hr/>
+        <button (click)="sendToParent(parentMsg+' too!')">Greet Back</button>
+      </div>
+      
+    </div>
+  </div>

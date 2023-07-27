@@ -71,6 +71,33 @@ Event Binding: <button (click)="submitForm()"></button>
 Two-Way Binding: <input [(ngModel)]="name">
 
 
+Angular Directives
+=======================
+1.Structural directives
+2.Attribute directives
+3.Component directive
+
+1.Structural directives
+--------------------------
+*ngIf
+*ngFor
+The built in *ngIf directive condiionally includes a template based on the value of an expression
+
+<div *ngIf="isActive">Content goes here</div>
+
+numbers=[10,20,30,40,50,60,70,80]; in .ts file
+<ul>
+    <li *ngFor="let num of numbers">{{num}}</li>
+</ul>
+
+
+
+
+
+
+
+
+
 
 
 

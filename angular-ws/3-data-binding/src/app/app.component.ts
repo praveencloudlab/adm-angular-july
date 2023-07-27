@@ -6,12 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
  married = false;
-
   f1(e:any){
       console.log(e.value);
       
+  }
+  msg='Sample text';
+  newMsg='Sample text';
+
+  readText(text:any){
+    this.msg=text.value;
   }
 
  // create function in ts
@@ -20,6 +24,5 @@ export class AppComponent {
   this.married=!e.checked;
   
  }
-
 
 }
