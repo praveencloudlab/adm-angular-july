@@ -1,0 +1,47 @@
+<div class="container">
+
+  <h1>Custom Pipes</h1> <hr/>
+
+  <h4>{{today | addDays:180 | date:'fullDate'}}</h4>
+
+  <hr/>
+  <h1>Built in Pipes</h1> <hr/>
+
+  <h4>Upper case: {{'praveen' | uppercase }}</h4>
+  <h4>Lower case: {{'PRAVEEN' | lowercase}}</h4>
+  <hr/>
+  <h4>Date: {{today}}</h4>
+  <h4>Medium date: {{today|date:'medium'}}</h4>
+  <h4>Short Date: {{today |date:'short'}}</h4>
+  <h4>Full Date: {{today | date:'fullDate'}}</h4>
+  <h4>Long Date: {{today | date:'longDate'}}</h4>
+  <h4>Time : {{today | date:'mediumTime'}}</h4>
+  <h4>Date: {{today | date:'MM-dd-yyyy'}}</h4>
+  <h4>Date: {{today | date:'MMM-dd-yyyy'}}</h4>
+  <h4>Date: {{today | date:'MMMM-dd-yyyy'}}</h4>
+  <h4>Date: {{today | date:'MMM/dd/yyyy'}}</h4>
+  <h4>Date: {{today | date:'MMM-dd-yy'}}</h4>
+  <hr/>
+
+  <h4>Currency: {{34500 | currency}}</h4>
+  <h4>Currency: {{34500 | currency:'USD'}}</h4>
+  <h4>Currency: {{34500 | currency:'INR'}}</h4>
+  <h4>Currency: {{34500 | currency:'GBP'}}</h4>
+
+  <hr/>
+  <h4>{{emp | json}}</h4>
+  <hr/>
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+</div>
