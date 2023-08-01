@@ -1,0 +1,11 @@
+Angular Forms
+=================
+Angular is a popular platform for building web applications, and Angular Forms is an integral part of this platform. Angular Forms help create, validate, and process user input in a flexible and robust manner. There are two types of forms in Angular: Template-driven and Reactive.
+
+Template-Driven Forms: This approach is simple and similar to how forms work in traditional HTML. It's best suited for simple scenarios and fails to handle complex scenarios. They are called "Template-driven" because the form logic and controls are defined directly in the template. They are built on two key Angular features: directives and two-way data binding.
+
+Reactive Forms: This approach is more robust and flexible, allowing for complex scenarios. Reactive forms are called as such because they are built around observable streams, where form inputs and values are provided as streams of input values, which can be accessed synchronously. In Reactive forms, the form logic and controls are defined in the component class, making them more scalable and testable.
+
+Angular forms provide validation capabilities, both built-in validators (like required, minlength, maxlength etc.) and custom validators. You can easily display validation errors and guide the user to correct them.
+
+To use Angular forms, you'll first need to import the FormsModule (for Template-driven forms) or the ReactiveFormsModule (for Reactive forms) from '@angular/forms' in your application module or the specific module where you wish to use the forms.

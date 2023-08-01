@@ -1,0 +1,48 @@
+<div class="container">
+  <h1>Reactive Forms</h1> <hr/>
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label>Name</label>
+      <input type="text" formControlName="name" />
+      <div *ngIf="fc()['name']?.invalid && (fc()['name']?.dirty || fc()['name']?.touched)">
+        <div  *ngIf="fc()['name']?.errors?.['required']" class="text-danger">
+            Product Title is Required
+        </div>
+
+        <div  *ngIf="fc()['name']?.errors?.['minlength']" class="text-danger">
+          Product Name should be at least 3 characters long
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <label>Price</label>
+      <input type="text" formControlName="price"/>
+      <div *ngIf="fc()['price']?.invalid && (fc()['price']?.dirty || fc()['price']?.touched)">
+        <div  *ngIf="fc()['price']?.errors?.['required']" class="text-danger">
+          Product Price is Required
+      </div>
+      <div  *ngIf="fc()['price']?.errors?.['minlength']" class="text-danger">
+        Product Price should be at least 3 digits
+    </div>
+
+      </div>
+    </div>
+
+    <div>
+      <label>Description</label>
+      <textarea type="text" formControlName="description"></textarea>
+    </div>
+    <div *ngIf="fc()['description']?.invalid && (fc()['description']?.dirty || fc()['description']?.touched)">
+      <div  *ngIf="fc()['description']?.errors?.['required']" class="text-danger">
+        Product Description is Required
+    </div>
+    </div>
+    <div>
+      <button>Save</button>
+    </div>
+
+  </form>
+</div>  
