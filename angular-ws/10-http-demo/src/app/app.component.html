@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Observable Demo</h1> <hr/>
+
+
+  <table class="table table-bordered table-sm">
+   <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Option1</th>
+    </tr>
+   </thead>
+
+   <tbody>
+    <tr *ngFor="let prod of products">
+        <td>{{prod.id}}</td>
+        <td>{{prod.name}}</td>
+        <td>{{prod.price}}</td>
+        <td>{{prod.description}}</td>
+        <td><button (click)="editProduct(prod)">Edit</button></td>
+    </tr>
+
+   </tbody>
+  </table>
+
+   
+   <hr/>
+   <app-product-form></app-product-form>
+
+</div>

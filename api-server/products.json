@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "name": "Apple Mac Book Pro",
+      "price": 265000,
+      "description": "Apple Chipset",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "name": "Mobile",
+      "price": 45000,
+      "description": "Samsung J7"
+    },
+    {
+      "id": 12,
+      "name": "iPad",
+      "price": 85000,
+      "description": "Apple iPad"
+    },
+    {
+      "id": 4,
+      "name": "Tab",
+      "price": "45000",
+      "description": "Samsung Tab"
+    }
+  ],
+  "cart": [],
+  "users": [],
+  "orders": []
+}
