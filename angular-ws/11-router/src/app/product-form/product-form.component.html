@@ -1,0 +1,22 @@
+<div>
+    <form [formGroup]="productForm" (ngSubmit)="handleSubmit()">
+        <div>
+            <label>Product Name</label>
+            <input formControlName="name"/>
+        </div>
+        <div>
+            <label>Price</label>
+            <input formControlName="price"/>
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea formControlName="description"></textarea>
+        </div>
+        <div *ngIf="productId==0">
+            <button>Save</button>
+        </div>
+        <div *ngIf="productId!=0">
+            <button>Edit</button>
+        </div>
+    </form>
+</div>

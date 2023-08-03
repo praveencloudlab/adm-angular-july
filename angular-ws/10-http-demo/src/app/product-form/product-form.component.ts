@@ -21,11 +21,14 @@ export class ProductFormComponent implements OnInit {
   
   saveProduct(){
    // if product id already exists, then edit, other wise save it
-      this.ps.findProduct(this.productForm.get('id')).subscribe(product=>this.product=product)
       if(this.product){
         // edit
+        console.log("edit");
+        
       }else{
         // save
+        console.log("save");
+        
       }
    // let newProd={"id":this.products.length+1,...this.productForm.value}
     //console.log(newProd);
@@ -46,10 +49,11 @@ export class ProductFormComponent implements OnInit {
       'description':['']
     });
 
+
     this.subscription=this.sharedService.selectedProduct$.subscribe(product=>{
       if(product){
                 this.productForm.patchValue(product);
-               
+                this.product=product;
       }
     });
     
