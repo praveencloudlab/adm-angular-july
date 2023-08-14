@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "name": "Apple Mac Book Pro",
-      "price": 265000,
-      "description": "Apple Chipset",
-      "id": 10
-    },
-    {
       "id": 8,
       "name": "Mouse",
       "price": "5000",
